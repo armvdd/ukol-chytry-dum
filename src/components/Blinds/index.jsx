@@ -18,8 +18,8 @@ const Blinds = ({state}) => {
             Žaluzie
         </div>
         <div className="blinds__controls">
-            <button className="button button--active" onClick={()=>setBlinds("open")}>Otevřeno</button>
-            <button className="button" onClick={()=>setBlinds("closed")}>Zavřeno</button>
+            <button className={blinds==="open"? "button--active" : "button"} onClick={()=>setBlinds("open")}>Otevřeno</button>
+            <button className={blinds==="closed"? "button--active" : "button"} onClick={()=>setBlinds("closed")}>Zavřeno</button>
         </div>
     </div>
      )
